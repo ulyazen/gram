@@ -2,8 +2,7 @@ import React from 'react'
 import './Login.css'
 import '../../components/button/button.css'
 import { Card, Form, Button } from 'react-bootstrap'
-import Primary from '../../components/button/Primary'
-
+import { Link } from 'react-router-dom'
 function Login () {
   return (
     <div className='body'>
@@ -22,7 +21,7 @@ function Login () {
             </Form.Group>
             <div className='d-grid gap-2 mt-5'>
               <Button className='gradient border-0' size='lg'>
-                Login
+                <Link to='/'>Login</Link>
               </Button>
             </div>
             <div className='my-3 text-center'>
